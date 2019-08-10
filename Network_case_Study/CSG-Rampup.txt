@@ -1,0 +1,66 @@
+Hands-on
+
+Basic access & checks
+ - Login to the router through VTY, Aux and Mgmt port 
+ - Change the hostname 
+ - Check Clock on RP and LC ; change the clock and verify if it is persistent
+ - Change the password ; and check by logging back in 
+ - Backup config to disk ; load config from file in disk and restore 
+
+Checking available hardware:
+ - Check the router version, OS image loaded with packages 
+ - Check the LC's and which slots they are in; List the different type of LC
+ - Identify different type of memory on the router 
+ - File operations: copy , delete, move and using commands to check file & permissions on the router 
+ - <to add>
+
+IP connectivity:-
+ - Configure Mgmt port , check for proxy arp and duplicate IP
+ - Configure a static route to TFTP server, and copy config out to TFTP partition 
+ - Load existing config from TFTP to router ; commit replace 
+ - Explain different ping responses ; 
+ - Configure mixed and plain bundles ; assign IP address and ping 
+
+Install, Image loading : 
+- Check available PIEs and images in the system 
+- 
+
+HA events :
+- Perform RP FO , FB ; check time taken for RP to come up initial and NSR ready
+- Check syslog for errors, tracebacks and core files 
+- Perform process HA - cold and warm restart and kill 
+- Perform OIR of different h/w components - LC, SPA etc. 
+- Fabric test scenarions - shut/unshut 
+
+Baseconfig bringup , and check sessions/traffic flow etc. 
+
+Programming Exercises:
+----------------------
+Write a TCL Program to Generate the Fibonacci Series of N numbers.
+Write a TCL Program to find out if a given string is Palindrome (don't use direct string reverse procs)
+Write a TCL Program to do sorting (Both ascending and Descending, any sorting algorithm can be used)
+Write a TCl Program to remove repeated lines in a given file.
+Write a TCL Program to remove duplicate numbers in a list.
+Write a TCL Program to find out if a given number is a prime number?
+Write a TCl Program to find out if the elements in 2 lists are same?
+
+Parser exercises : Write parsers (single line) for different commands , and finally complete parsers
+show version ( extract hardware, software version, system uptime)
+show interface ( extract interface type, slot & port number, link status & pkts in/out statistics)
+show ip interface brief ( extract list of interface, and its respective IP address and status into an array)
+show ip route summary ( extract list by protocol, and # of routes )
+show ip route ( detailed list of IP routes extracted into the array)
+show ip ospf neighbor ( List of neighbors, OSPF state) 
+show ip bgp summary 
+
+Parsing IP address, and verify if valid IP address ; repeat for a multicast address
+Check given IP address and return which class of IP address is it 
+Parsing a string to check if given IPv6 address is present in it
+Configure static route, and TFTP gateway ; check with show commands and report result
+Perform a ping test, and extract success rate and final status (pass/fail)
+PErform extended ping , by sending 100 packets 
+Configure a two router topology with interface/ip address and check interface status, packet stats with ping
+Configure OSPF in a 3 router setup, check OSPF neighbor state, OSPF database and routing table entries
+
+
+
